@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale="1.0">
+
+  <meta name="description"
+    content="Контакт страница — Ромејско Царство (Византија). Пошаљите нам поруку или питање.">
+
+  <meta name="keywords"
+    content="контакт, Ромејско царство, Византија, емаил, порука">
+
+  <meta name="author" content="Ромејско Царство">
+
+  <title>Контакт | Ромејско Царство</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Центрирање контакт форме */
+    .kontakt-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+
+    .kontakt-stavka {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 8px;
+      border-left: 4px solid #d4af37;
+      text-align: center;
+    }
+
+    .kontakt-stavka h3 {
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+
+    .kontakt-stavka a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    .kontakt-stavka a:hover {
+      text-decoration: underline;
+    }
+
+    .kontakt-forma {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .forma-grupa {
+      margin-bottom: 20px;
+    }
+
+    .forma-grupa label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #1a1a2e;
+      text-align: center;
+    }
+
+    .forma-grupa input,
+    .forma-grupa textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: 'Noto Serif', serif;
+      box-sizing: border-box;
+    }
+
+    .forma-grupa input:focus,
+    .forma-grupa textarea:focus {
+      outline: none;
+      border-color: #d4af37;
+    }
+
+    .forma-grupa textarea {
+      resize: vertical;
+    }
+
+    button[type="submit"] {
+      display: block;
+      margin: 30px auto 0;
+      background: #d4af37;
+      color: #1a1a2e;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background: #c9a227;
+    }
+
+    /* Исправка за дугме "Назад на почетну" - ВИДЉИВО И ЦЕНТРИРАНО */
+    .dugme2 {
+      display: block;
+      background: #1a1a2e;
+      color: #d4af37;
+      padding: 14px 35px;
+      border: 2px solid #d4af37;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s;
+      text-align: center;
+      margin: 30px auto 0;
+      width: fit-content;
+    }
+
+    .dugme2:hover {
+      background: #d4af37;
+      color: #1a1a2e;
+    }
+
+    @media (max-width: 768px) {
+      .kontakt-info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="zaglavlje">
+    <div class="container">
+      <img src="slike/logo.png" alt="Грб Ромејског царства" class="logo">
+
+      <h1>РОМЕЈСКО ЦАРСТВО</h1>
+      <h2>(ВИЗАНТИЈА)</h2>
+
+      <p class="grcki">ΒΑΣΙΛΕΙΑ ΡΩΜΑΙΩN</p>
+      <p class="latinski">Imperium Romanorum</p>
+
+      <div class="jezici">
+        <a href="index.html" title="Српски">СР</a>
+        <a href="en/index.html" title="English">EN</a>
+        <a href="ru/index.html" title="Русский">RU</a>
+        <a href="bg/index.html" title="Български">BG</a>
+        <a href="mk/index.html" title="Македонски">MK</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="meni"></div>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>Контакт</h2>
+      <p>
+        Пошаљите нам поруку, питање или предлог.
+        Радо ћемо одговорити на све ваше упите везане за Ромејско царство.
+      </p>
+    </div>
+  </section>
+
+  <section class="uvod">
+    <div class="container">
+      <h2>Пошаљите нам поруку</h2>
+      <div class="linija"></div>
+
+      <p style="text-align: center; font-size: 18px; line-height: 1.8;">
+        За све информације, предлоге или сарадњу,<br>
+        можете нас слободно контактирати.
+      </p>
+
+      <br><br>
+
+      <h2>Форма за контакт</h2>
+      <div class="linija"></div>
+
+      <form class="kontakt-forma" action="https://formspree.io/f/xzdnzbve" method="POST">
+        <div class="forma-grupa">
+          <label for="ime">Име и презиме *</label>
+          <input type="text" id="ime" name="ime" required>
+        </div>
+
+        <div class="forma-grupa">
+          <label for="email">Емаил адреса *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="forma-grupa">
+          <label for="naslov">Наслов поруке</label>
+          <input type="text" id="naslov" name="naslov">
+        </div>
+
+        <div class="forma-grupa">
+          <label for="poruka">Порука *</label>
+          <textarea id="poruka" name="poruka" rows="8" required></textarea>
+        </div>
+
+        <button type="submit" class="dugme">Пошаљи поруку</button>
+      </form>
+
+      <br><br>
+
+      <a href="index.html" class="dugme2">Назад на почетну</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h3>РОМЕЈСКО ЦАРСТВО (ВИЗАНТИЈА)</h3>
+      <p>ΒΑΣΙΛΕΙΑ ΡΩΜΑИΩN</p>
+      <p>Imperium Romanorum</p>
+      <hr>
+      <p>© 2026 Дигитална енциклопедија Ромејског царства.</p>
+      <p>Сва права задржана.</p>
+      <br>
+      <a href="kontakt.html" class="dugme">Контакт</a>
+    </div>
+  </footer>
+
+  <script src="js/meni.js"></script>
+  <script src="js/skripta.js"></script>
+
+</body>
+</html>
